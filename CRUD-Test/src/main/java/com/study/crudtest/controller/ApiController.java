@@ -1,2 +1,14 @@
-package com.study.crudtest.controller;public class ApiController {
+package com.study.crudtest.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/api")
+public class ApiController {
+    @GetMapping("/name")
+    public String name() {
+        return "Song ChangSeok";
+    }
 }
